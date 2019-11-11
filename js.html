@@ -1,0 +1,72 @@
+<html><head></head>
+
+    <style>.container{display: grid;}
+        .color:hover{background-color: white;}
+    
+    </style>
+
+
+
+<body>
+    
+  <div id="container"></div>  
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    
+var newDiv = document.createElement("div"); 
+  // and give it some content 
+  var newContent = document.createTextNode("Hi there and greetings!"); 
+  // add the text node to the newly created div
+  newDiv.appendChild(newContent);  
+        newDiv.style.width = "160px";
+newDiv.style.height = "160px";
+newDiv.style.background = "red";
+newDiv.style.color = "white";
+newDiv.innerHTML = "Hello";
+
+  var currentDiv = document.getElementById("container"); 
+currentDiv.appendChild(newDiv); 
+ newDiv.setAttribute("id","color") ;
+    
+    
+    
+    document.getElementById("color").onmouseover = function() 
+{
+    this.style.backgroundColor = "blue";
+}
+    
+    var newB = document.createElement("input"); 
+        newB.setAttribute("id","button");
+        newB.setAttribute("type","button");
+        newB.setAttribute("value","Click");
+                newB.style.width = "160px";
+newB.style.height = "160px";
+        
+        currentDiv.appendChild("newB");
+        
+        
+        document.getElementById("button").onclick=function(){
+            
+            
+            document.getElementById("container").detch();
+            
+            
+        }
+
+    
+    </script>
+    
+    
+    
+    </body>
+
+
+
+</html>
